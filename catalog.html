@@ -86,10 +86,66 @@
       8 812 450-25-25<!--тут другой кегль, так что, наверное, нужно будет обернуть в  span!-->
     </p>
   </section>
-
-
-      <!-- тут фильтр, а может быть он в секции ниже!-->
-
+  <section>
+    <h2 class="visually-hidden">Фильтр</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label for="sorting">Сортировка</label>
+      <select name="sorting" id="sorting">
+        <option value="by-popularity">по популярности</option>
+        <option value="inexpensive-first">сначала недорогие</option>
+        <option value="expensive-first">сначала дорогие</option>
+        <option value="by-fat">по жирности</option>
+      </select>
+      <div><!--тут будет ползунок!--></div>
+      <fieldset>
+        <legend>Жирность:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="fat" value="0%" id="fat-0">
+            <label for="fat-0">0%</label>
+          </li>
+          <li>
+            <input type="radio" name="fat" value="less-than-10%" id="fat-less-than-10" checked>
+            <label for="fat-less-than-10">до 10%</label>
+          </li>
+          <li>
+            <input type="radio" name="fat" value="less-than-30%" id="fat-less-than-30">
+            <label for="fat-less-than-30">до 30%</label>
+          </li>
+          <li>
+            <input type="radio" name="fat" value="more-than-30%" id="fat-more-than-30">
+            <label for="fat-more-than-30">более 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Наполнители</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="chocolate" id="filler-chocolate" checked>
+              <label for="filler-chocolate">Шоколадные</label>
+            <li>
+            <li>
+              <input type="checkbox" name="sugar" id="filler-sugar" checked>
+              <label for="filler-sugar">Сахарные присыпки</label>
+            <li>
+            <li>
+              <input type="checkbox" name="fruit" id="filler-fruit">
+              <label for="filler-fruit">Фрукты</label>
+            <li>
+            <li>
+              <input type="checkbox" name="syrup" id="filler-syrup">
+              <label for="filler-syrup">Сироп</label>
+            <li>
+            <li>
+              <input type="checkbox" name="jam" id="filler-jam">
+              <label for="filler-jam">Джем</label>
+            <li>
+          </ul>
+      </fieldset>
+      <button type="submit">Применить</button>
+    </form>
+  </section>
   <section>
     <h2>Мороженое</h2>
       <ul>
