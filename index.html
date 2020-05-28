@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
           <img src="./img/logo.svg" width="154" height="64" alt="Лого GllacyShop">
-        <ul>
+        <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог</a>
-            <ul>
+            <ul class="catalog-navigation">
               <li><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -22,6 +25,7 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
+        <div class="user-navigation">
         <a href="#"><img src="./img/loupe.svg" width="16" height="16" alt="Лупа">Поиск</a>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
@@ -43,9 +47,10 @@
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </p>
-            <button type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
           </form>
         <a href="#"><img src="./img/basket.svg" width="21" height="20" alt="Корзина">Корзина</a>
+      </div>
       </nav>
     </header>
     <main>
@@ -53,9 +58,9 @@
       <section>
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>
         <img src="./img/ice-creem-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-        <button type="button">Дайте два!</button>
+        <button class="button" type="button">Дайте два!</button>
       </section>
-      <section>
+      <section class="section">
         <h3>Малинка даром!</h3>
         <div>
           <img src="./img/raspberry-backgroud.jpg" width="560" height="229" alt="Малиновый фон">
@@ -64,9 +69,9 @@
           При покупке 2кг любого фруктового мороженого, добавим<br>
           в ваш заказ банку малинового варенья бесплатно.
         </p>
-        <button type="button">Хочу варенье!</button>
+        <button class="button" type="button">Хочу варенье!</button>
       </section>
-      <section>
+      <section class="section">
         <h3>Шоколадки даром!</h3>
         <div><!--а фон не через css должен подклбчаться?!-->
           <img src="./img/chocolate-backgroud.jpg" width="560" height="229" alt="Шоколадный фон">
@@ -75,12 +80,12 @@
           При покупке 2кг пломбира, добавим в ваш заказ упаковку<br>
           вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <button type="button">Хочу шоколадки!</button>
+        <button class="button" type="button">Хочу шоколадки!</button>
       </section>
       <section>
         <h2 class="visually-hidden">Хиты</h2>
-        <ul>
-          <li>
+        <ul class="ice-creem-list">
+          <li class="catalog-item">
             <a href="#">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <p>
@@ -94,7 +99,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
               <p>
@@ -108,7 +113,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               <p>
@@ -122,7 +127,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               <p>
@@ -138,11 +143,11 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="gllacy-shop-info section">
         <h4>Магазин Глэйси - это онлайн и офлайн-магазин по продаже
            мороженого собственного производства на развес</h4>
-        <ul>
-          <li>
+        <ul class="gllacy-shop-info-list">
+          <li class="gllacy-shop-info-item">
             <div>
               <img src="./img/ice-cream.svg" width="16" height="32" alt="Мороженое">
             </div>
@@ -150,7 +155,7 @@
             производстве, с использованием современного оборудования<br>
             и проверенных временем технологий.
           </li>
-          <li>
+          <li class="gllacy-shop-info-item">
             <div>
               <img src="./img/eco.svg" width="16" height="27" alt="Листик">
             </div>
@@ -159,7 +164,7 @@
             ингридиенты и добавки произведены из натурального,<br>
             экологически чистого сырья.
           </li>
-          <li>
+          <li class="gllacy-shop-info-item">
             <div>
               <img src="./img/cow.svg" width="24" height="24" alt="Корова">
             </div>
@@ -167,9 +172,9 @@
             фермерских хозяйств и компаний, с которыми нас связывает<br>
             долговременное сотрудничество.
           </li>
-          <li>
+          <li class="gllacy-shop-info-item">
             <div>
-              <img src="./img/thermometr.svg" width="16" height="26" alt="Градусник">
+              <img src="./img/thermometer.svg" width="16" height="26" alt="Градусник">
             </div>
             Доставка нашего мороженого до заказчиков осуществляется<br>
             в специальном термопаке, который не дает мороженому<br>
@@ -178,7 +183,7 @@
         </ul>
         <img src="./img/waffle-pattern.png" alt="Вафельный фон">
       </section>
-      <section>
+      <section class="news section">
         <h4>Новое в нашем блоге</h4>
         <a href="#">
           <img src="./img/strawberry-backgroud.jpg" width="560" height="220" alt="Клубничный фон">
@@ -187,7 +192,7 @@
           столу
         </a>
       </section>
-      <section>
+      <section class="subscription section">
         <h4 class="visually-hidden">Подписка</h4>
         <img src="./img/mail-backgroud.jpg" width="560" height="220" alt="Почтовый фон">
         <p>
@@ -197,10 +202,10 @@
         </p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label for="mailing">Электронная почта</label>
-            <input id="mailing" type="email" name="mailing" placeholder="email@example.com">
+            <label for="mail">Электронная почта</label>
+            <input id="mail" type="email" name="mailing" placeholder="email@example.com">
           </p>
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
       <section>
@@ -218,7 +223,7 @@
           <span>8 812 450-25-25</span><br>
           (с 10 до 20 ежедневно)
         </p>
-        <button type="button">Форма обратной связи</button>
+        <button class="button" type="button">Форма обратной связи</button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2>Мы обязательно вам ответим!</h2>
           <button type="button">Закрыть окно</button><!--куда нужно поместить эту кнопку?!-->
@@ -235,14 +240,14 @@
             <input id="some-answer" type="text" name="answer" placeholder="Напишите что-нибудь...">
             <!--По идее, тут нужен textarea?!-->
           </p>
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-social">
         <h4 class="visually-hidden">Соцсети</h4>
-        <ul>
+        <ul class="footer-social-navigation">
           <li>
             <a href="#">
               <img src="./img/fb.svg" width="32" height="32" alt="FB">Facebook
@@ -265,10 +270,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="footer-info">
         <h4 class="visually-hidden">Информация</h4>
-        <ul>
-            <li><a href="#">Для поставщиков</a></li>
+        <ul class="footer-info-navigation">
+            <li><a href="#"> <img src="./img/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
             <li><a href="#">Наши документы</a></li>
             <li><a href="#">Экологические стандарты</a></li>

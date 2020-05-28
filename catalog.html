@@ -3,72 +3,77 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
-<body>
-<header>
-  <nav>
-      <img src="./img/logo.svg" width="154" height="64" alt="Лого GllacyShop">
-    <ul>
-      <li>
-        <a href="catalog.html">Каталог</a>
-        <ul>
-          <li><a href="#">Новинки</a></li>
-          <li><a href="#">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О компании</a></li>
-    </ul>
-    <a href="#"><img src="./img/loupe.svg" width="16" height="16" alt="Лупа">Поиск</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="search">Поиск</label>
-          <input id="search" type="text" name="search" placeholder="Что ищем?">
-        </p>
-      </form>
-    <a href="#"><img src="./img/entrance.svg" width="20" height="19" alt="Вход">Вход</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="login">Логин</label>
-          <input id="login" type="email" name="login" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="login-password">Пароль</label>
-          <input id="login-password" type="password" name="password" placeholder="••••••••">
-        </p>
-        <p>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </p>
-        <button type="submit">Войти</button>
-      </form>
-    <a href="#"><img src="./img/basket.svg" width="21" height="20" alt="Корзина">Корзина</a>
-      <div>
-        <ul>
-          <li>
-            <button type="button">Удалить из корзины</button>
-            <img src="orange.png" width="33" height="33" alt="Апельсиновое мороженое">
-            <div>1,5кг x <span>200 руб.</span></div>
-            <div>300 руб.</div><!-- или тут лучше таблица подойдет?!-->
-          </li>
-          <li>
-            <button type="button">Удалить из корзины</button>
-            <img src="strawberry.png" width="33" height="33" alt="Клубничное мороженое">
-            <div>1,5кг x <span>300 руб.</span></div>
-            <div>450 руб.</div>
-          </li>
-        </ul>
-        <span>Итого: 750 руб.</span>
-        <button type="button">Оформить заказ</button>
+<body class="catalog-page">
+  <header>
+    <nav class="main-navigation">
+        <img src="./img/logo.svg" width="154" height="64" alt="Лого GllacyShop">
+      <ul class="site-navigation">
+        <li>
+          <a href="catalog.html">Каталог</a>
+          <ul class="catalog-navigation">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+      <div class="user-navigation">
+      <a href="#"><img src="./img/loupe.svg" width="16" height="16" alt="Лупа">Поиск</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="search">Поиск</label>
+            <input id="search" type="text" name="search" placeholder="Что ищем?">
+          </p>
+        </form>
+      <a href="#"><img src="./img/entrance.svg" width="20" height="19" alt="Вход">Вход</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="login">Логин</label>
+            <input id="login" type="email" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="login-password">Пароль</label>
+            <input id="login-password" type="password" name="password" placeholder="••••••••">
+          </p>
+          <p>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
+      <a href="#"><img src="./img/basket.svg" width="21" height="20" alt="Корзина">Корзина</a>
+        <div>
+          <ul>
+            <li>
+              <button type="button">Удалить из корзины</button>
+              <img src="orange.png" width="33" height="33" alt="Апельсиновое мороженое">
+              <div>1,5кг x <span>200 руб.</span></div>
+              <div>300 руб.</div><!-- или тут лучше таблица подойдет?!-->
+            </li>
+            <li>
+              <button type="button">Удалить из корзины</button>
+              <img src="strawberry.png" width="33" height="33" alt="Клубничное мороженое">
+              <div>1,5кг x <span>300 руб.</span></div>
+              <div>450 руб.</div>
+            </li>
+          </ul>
+          <span>Итого: 750 руб.</span>
+          <button class="button" type="button">Оформить заказ</button>
+        </div>
       </div>
-  </nav>/
-</header>
+    </nav>/
+  </header>
 
 <main>
-  <ul>
+  <ul class="path">
     <li>
       <a href="index.html">Главная</a>
     </li>
@@ -79,11 +84,11 @@
       Сливочное
     </li>
   </ul>
-  <section>
+  <section class="catalog-main">
     <h1>Сливочное мороженое</h1>
     <p>
       с 10 до 20, ежедневно<br>
-      8 812 450-25-25<!--тут другой кегль, так что, наверное, нужно будет обернуть в  span!-->
+      <span>8 812 450-25-25<span>
     </p>
   </section>
   <section>
@@ -148,8 +153,8 @@
   </section>
   <section>
     <h2>Мороженое</h2>
-      <ul>
-        <li>
+      <ul class="ice-creem-list">
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             <p>
@@ -160,7 +165,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
             <p>
@@ -171,7 +176,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <p>
@@ -182,7 +187,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             <p>
@@ -193,7 +198,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
         <a href="#">
           <h3>Сливочное с брусничным джемом</h3>
           <p>
@@ -204,7 +209,7 @@
           </p>
         </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочно-черничное с цельными ягодами черники</h3>
             <p>
@@ -215,7 +220,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             <p>
@@ -226,7 +231,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное с шоколадной стружкой</h3>
             <p>
@@ -237,7 +242,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочно-ванильное с кусочками шоколада</h3>
             <p>
@@ -248,7 +253,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное с ментоловым сиропом</h3>
             <p>
@@ -259,7 +264,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное с кусочками черного шоколада</h3>
             <p>
@@ -270,7 +275,7 @@
             </p>
           </a>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="#">
             <h3>Сливочное с мятным сиропом</h3>
             <p>
@@ -293,10 +298,10 @@
       <li><a href="#">&rangle;</a></li>
     </ul>
 </main>
-<footer>
-  <section>
+<footer class="main-footer">
+  <section class="footer-social">
     <h4 class="visually-hidden">Соцсети</h4>
-    <ul>
+    <ul class="footer-social-navigation">
       <li>
         <a href="#">
           <img src="./img/fb.svg" width="32" height="32" alt="FB">Facebook
@@ -319,10 +324,10 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="footer-info">
     <h4 class="visually-hidden">Информация</h4>
-    <ul>
-        <li><a href="#">Для поставщиков</a></li>
+    <ul class="footer-info-navigation">
+        <li><a href="#"> <img src="./img/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
