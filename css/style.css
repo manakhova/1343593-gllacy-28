@@ -12,9 +12,8 @@ body {
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 16px;
   color: var(--basic-white);
   background-color: var(--basic-dusty-green);
 }
@@ -27,7 +26,7 @@ img {
 
 /*Navigation*/
 .main-navigation {
-  font-size: 16px;
+  font-weight: bold;
   line-height: 18px;
   background-color: var(--basic-dusty-green);
 }
@@ -62,7 +61,7 @@ img {
   color: var(--basic-black);
 }
 
-.gllacy-shop-info h4 {
+.gllacy-shop-info-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
@@ -73,27 +72,33 @@ img {
 }
 
 .gllacy-shop-info-item {
-  font-weight: normal;
-  font-size: 16px;
   line-height: 22px;
 }
 /*News*/
 .news {
   background-image: url("../img/strawberry-backgroud.png");
-  background: var(--basic-white);
+  background-color: var(--basic-white);
   color: var(--basic-black);
 }
 
-.news h4 {
+.news-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 22px;
 }
 
 .news a {
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-black);
+}
+
+/*Subscription*/
+
+.subscription {
+  background-color: var(--basic-mailing-backgroud);
+  color: var(--basic-black);
+  line-height: 22px;
 }
 /*Footer*/
 .main-footer {
@@ -120,6 +125,7 @@ img {
 .button {
   font-size: 18px;
   line-height: 24px;
+  color: var(--basic-white);
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
 }
 
@@ -152,22 +158,27 @@ img {
 }
 
 /*Catalog Items*/
-.ice-creem-list h3 {
+.catalog-item-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 22px;
 }
 
 .ice-creem-list p {
   font-size: 45px;
   line-height: 45px;
+  font-weight: bold;
 }
 
 .ice-creem-list span {
   font-size: 30px;
   line-height: 35px;
+  font-weight: bold;
 }
 
 .catalog-item {
   background-color: var(--basic-dusty-green);
+}
+
+.catalog-item a {
+  color: var(--basic-white);
 }
