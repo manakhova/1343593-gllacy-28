@@ -5,7 +5,7 @@
 --basic-orange: #F26843;
 --basic-orange-dark: #E74A35;
 --basic-black: #323232;
---basic-mailing-backgroud: #F8F7F4;
+--basic-mailing-background: #F8F7F4;
 }
 /*Global*/
 body {
@@ -35,7 +35,8 @@ img {
 .catalog-navigation,
 .footer-social-navigation,
 .footer-info-navigation,
-.ice-creem-list {
+.ice-cream-list,
+.paganation {
   list-style: none;
 }
 
@@ -54,6 +55,45 @@ img {
 .section {
   border-radius: 16px;
 }
+/*Main*/
+.two-ice-cream-index1-title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.chocolate-bgr {
+  background-image: url("../img/chocolate-background.jpg");
+}
+
+.chocolate-free-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.chocolate-bgr p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.raspberry-bgr {
+  background-image: url("../img/raspberry-background.jpg");
+}
+
+.raspberry-free-title {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.raspberry-bgr p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 /*Information*/
 .gllacy-shop-info {
   background-image: url("../img/waffle-pattern.png");
@@ -76,7 +116,7 @@ img {
 }
 /*News*/
 .news {
-  background-image: url("../img/strawberry-backgroud.png");
+  background-image: url("../img/strawberry-background.png");
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
@@ -96,7 +136,8 @@ img {
 /*Subscription*/
 
 .subscription {
-  background-color: var(--basic-mailing-backgroud);
+  background-image: url("../img/mail-background.png");
+  background-color: var(--basic-mailing-background);
   color: var(--basic-black);
   line-height: 22px;
 }
@@ -157,19 +198,40 @@ img {
   line-height: 24px;
 }
 
+/*Filter*/
+.filter-section {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-section-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+.filter-item {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.filter-button {
+
+}
+
 /*Catalog Items*/
 .catalog-item-title {
   font-weight: 500;
   line-height: 22px;
 }
 
-.ice-creem-list p {
+.ice-cream-list p {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
 }
 
-.ice-creem-list span {
+.ice-cream-list span {
   font-size: 30px;
   line-height: 35px;
   font-weight: bold;
@@ -181,4 +243,9 @@ img {
 
 .catalog-item a {
   color: var(--basic-white);
+}
+
+.paganation li {
+  font-weight: 500;
+  line-height: 18px;
 }
