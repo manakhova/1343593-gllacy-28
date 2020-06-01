@@ -10,66 +10,72 @@
 <body class="catalog-page">
   <header>
     <nav class="main-navigation">
-        <img src="./img/logo.svg" width="154" height="64" alt="Лого GllacyShop">
-      <ul class="site-navigation">
-        <li>
-          <a href="catalog.html">Каталог</a>
-          <ul class="catalog-navigation">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
-      </ul>
-      <div class="user-navigation">
-      <a href="#"><img src="./img/loupe.svg" width="16" height="16" alt="Лупа">Поиск</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="search">Поиск</label>
-            <input id="search" type="text" name="search" placeholder="Что ищем?">
-          </p>
-        </form>
-      <a href="#"><img src="./img/entrance.svg" width="20" height="19" alt="Вход">Вход</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="login">Логин</label>
-            <input id="login" type="email" name="login" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="login-password">Пароль</label>
-            <input id="login-password" type="password" name="password" placeholder="••••••••">
-          </p>
-          <p>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-          <button class="button" type="submit">Войти</button>
-        </form>
-      <a href="#"><img src="./img/basket.svg" width="21" height="20" alt="Корзина">Корзина</a>
-        <div>
-          <ul>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <div class="main-logo">
+            <img src="./img/logo.svg" width="154" height="64" alt="Лого GllacyShop">
+          </div>
+          <ul class="site-navigation">
             <li>
-              <button type="button">Удалить из корзины</button>
-              <img src="./img/orange.png" width="33" height="33" alt="Апельсиновое мороженое">
-              <div>1,5кг x <span>200 руб.</span></div>
-              <div>300 руб.</div><!-- или тут лучше таблица подойдет?!-->
+              <a href="catalog.html">Каталог</a>
+              <ul class="catalog-navigation visually-hidden">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
             </li>
-            <li>
-              <button type="button">Удалить из корзины</button>
-              <img src="./img/strawberry.png" width="33" height="33" alt="Клубничное мороженое">
-              <div>1,5кг x <span>300 руб.</span></div>
-              <div>450 руб.</div>
-            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
           </ul>
-          <span>Итого: 750 руб.</span>
-          <button class="button" type="button">Оформить заказ</button>
+          <div class="user-navigation">
+            <a href="#"><img src="./img/loupe.svg" width="16" height="16" alt="Лупа">Поиск</a>
+            <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="search">Поиск</label>
+                <input id="search" type="text" name="search" placeholder="Что ищем?">
+              </p>
+            </form>
+            <a href="#"><img src="./img/entrance.svg" width="20" height="19" alt="Вход">Вход</a>
+            <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="login">Логин</label>
+                <input id="login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" type="password" name="password" placeholder="••••••••">
+              </p>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+            <a href="#"><img src="./img/basket.svg" width="21" height="20" alt="Корзина">Корзина</a>
+          <div>
+            <ul>
+              <li>
+                <button type="button">Удалить из корзины</button>
+                <img src="./img/orange.png" width="33" height="33" alt="Апельсиновое мороженое">
+                <div>1,5кг x <span>200 руб.</span></div>
+                <div>300 руб.</div><!-- или тут лучше таблица подойдет?!-->
+              </li>
+              <li>
+                <button type="button">Удалить из корзины</button>
+                <img src="./img/strawberry.png" width="33" height="33" alt="Клубничное мороженое">
+                <div>1,5кг x <span>300 руб.</span></div>
+                <div>450 руб.</div>
+              </li>
+            </ul>
+            <span>Итого: 750 руб.</span>
+            <button class="button" type="button">Оформить заказ</button>
+          </div>
+          </div>
         </div>
       </div>
-    </nav>/
+    </nav>
   </header>
 
 <main>
@@ -299,43 +305,45 @@
     </ul>
 </main>
 <footer class="main-footer">
-  <section class="footer-social">
-    <h4 class="visually-hidden">Соцсети</h4>
-    <ul class="footer-social-navigation">
-      <li>
-        <a href="#">
-          <img src="./img/fb.svg" width="32" height="32" alt="FB">Facebook
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./img/vk.svg" width="32" height="32" alt="Vk">Vkontakte
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./img/instagram.svg" width="32" height="32" alt="Instagram">Instagram
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./img/twitter.svg" width="32" height="32" alt="Twitter">Twitter
-        </a>
-      </li>
-    </ul>
-  </section>
-  <section class="footer-info">
-    <h4 class="visually-hidden">Информация</h4>
-    <ul class="footer-info-navigation">
-        <li><a href="#"> <img src="./img/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-    </ul>
-  </section>
+  <div class="container">
+    <section class="footer-social">
+      <h4 class="visually-hidden">Соцсети</h4>
+      <ul class="footer-social-navigation">
+        <li>
+          <a href="#">
+            <img src="./img/fb.svg" width="32" height="32" alt="FB">Facebook
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/vk.svg" width="32" height="32" alt="Vk">Vkontakte
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/instagram.svg" width="32" height="32" alt="Instagram">Instagram
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/twitter.svg" width="32" height="32" alt="Twitter">Twitter
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-info">
+      <h4 class="visually-hidden">Информация</h4>
+      <ul class="footer-info-navigation">
+          <li><a href="#"> <img src="./img/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </section>
     <p>
     Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Лого HTML Academy">HTML Academy</a>
     </p>
+  </div>
 </footer>
 </body>
 </html>

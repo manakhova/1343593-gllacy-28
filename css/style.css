@@ -9,7 +9,7 @@
 }
 /*Global*/
 body {
-  min-width: 1220px;
+  min-width: 1166px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', "Arial", sans-serif;
@@ -22,13 +22,56 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Grid */
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*Index*/
 
 /*Navigation*/
 .main-navigation {
+  margin-top: 9px;
+  margin-left: 27px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   line-height: 18px;
   background-color: var(--basic-dusty-green);
+}
+
+.main-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container,
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation,
@@ -38,6 +81,11 @@ img {
 .ice-cream-list,
 .paganation {
   list-style: none;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation{
@@ -60,6 +108,14 @@ img {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
+}
+
+.raspberry-bgr,
+.chocolate-bgr {
+  width: 560px;
+  height: 229px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .chocolate-bgr {
@@ -99,15 +155,33 @@ img {
   background-image: url("../img/waffle-pattern.png");
   background-color: var(--basic-mailing-backgroud);
   color: var(--basic-black);
+  max-width: 1146px;
+  height: 306px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 22px;
+  padding-left: 20px;
 }
 
 .gllacy-shop-info-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  margin-left: 20px;
+  margin-top: 24px;
+  margin-right: 131px;
+  margin-bottom: 21px;
 }
 
 .gllacy-shop-info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  margin: 33px;
+  padding: 0;
   list-style: none;
 }
 
@@ -141,6 +215,21 @@ img {
   color: var(--basic-black);
   line-height: 22px;
 }
+
+.news,
+.subscription {
+  width: 560px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
 /*Footer*/
 .main-footer {
   background-color: var(--basic-dusty-green);
@@ -222,6 +311,13 @@ img {
 .catalog-item-title {
   font-weight: 500;
   line-height: 22px;
+}
+
+.ice-cream-list {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 26px;
 }
 
 .ice-cream-list p {
