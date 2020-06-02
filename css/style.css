@@ -47,9 +47,8 @@ img {
 
 /*Navigation*/
 .main-navigation {
-  margin-top: 9px;
-  margin-left: 27px;
-  margin-right: 27px;
+  padding-left: 27px;
+  padding-right: 27px;
   display: flex;
   flex-direction: column;
   font-weight: 700;
@@ -64,7 +63,8 @@ img {
 
 .container {
   width: 1146px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
 }
 
@@ -114,8 +114,7 @@ img {
 .chocolate-bgr {
   width: 560px;
   height: 229px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .chocolate-bgr {
@@ -157,8 +156,6 @@ img {
   color: var(--basic-black);
   max-width: 1146px;
   height: 306px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 40px;
   padding-top: 25px;
   padding-right: 15px;
@@ -220,14 +217,17 @@ img {
 .subscription {
   width: 560px;
   height: 220px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .index-columns {
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
+}
+
+.index-columns .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Footer*/
@@ -287,8 +287,14 @@ img {
 }
 
 /*Filter*/
+
 .filter-section {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter-section-name {
