@@ -6,6 +6,7 @@
 --basic-dusty-brown: #9D8B84;
 --basic-orange: #F26843;
 --basic-orange-dark: #E74A35;
+--basic-red: #E84D37;
 --basic-black: #323232;
 --basic-mailing-background: #F8F7F4;
 --basic-salmon: #F6B5A5;
@@ -13,6 +14,7 @@
 --basic-light-grey: #EDEDED;
 --basic-terracotta: #D07058;
 --basic-peach: #FFBC9E;
+
 }
 /*Global*/
 body {
@@ -101,7 +103,7 @@ img {
   color: var(--basic-black);
 }
 
-.header-button:not(.basket-button-active):hover path {
+.header-button:hover .icon {
   fill: var(--basic-black);
 }
 
@@ -202,7 +204,7 @@ header {
 }
 
 .site-navigation-link:hover,
-.user-navigation-item:hover {
+.header-button:hover {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border-radius: 50px;
@@ -309,7 +311,7 @@ header {
   margin: 0;
 }
 
-.login-info a {
+.login-link {
   color: var(--basic-black);
 }
 
@@ -435,6 +437,7 @@ header {
   background-repeat: no-repeat;
   width: 21px;
   height: 20px;
+  fill: white;
 }
 
 .site-navigation a,
@@ -471,10 +474,21 @@ header {
 }
 
 .breadcrumbs a:hover,
+.breadcrumbs a:active,
 .catalog-item-title a:hover,
-.catalog-item-title a:active {
+.catalog-item-title a:active,
+.footer-info-link:hover,
+.footer-info-link:active,
+.academy-link:hover,
+.academy-link:active {
   color: var(--basic-peach);
   border-bottom: 1px solid rgba(255,188,158,.2);
+}
+
+.login-link:hover,
+.login-link:active {
+  color: var(--basic-red);
+  border: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .header-contacts {
@@ -500,7 +514,7 @@ header {
 
  /*Slider*/
  .site-wrapper {
-  margin-top: -113px;
+  margin-top: -121px;
   min-width: 940px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -776,18 +790,18 @@ header {
   height: 44px;
 }
 
-.subscription-form p {
-  margin: 0;
+.subscription-form label {
+  flex-grow: 1;
+  margin-right: 7px;
 }
 
 .subscription-form input[type='email'] {
   box-sizing: border-box;
   padding-left: 14px;
-  margin-right: 7px;
-  width: 368px;
   height: 44px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 6px;
+  width: 100%;
 
 }
 
@@ -803,7 +817,7 @@ header {
   margin-bottom: 40px;
 }
 
-.index-column-1 {
+.index-columns-1 {
   margin-top: -300px;
 }
 
@@ -820,7 +834,14 @@ header {
 }
 
 .map {
+  height: 100%;
   position: relative;
+}
+
+
+.map img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .map::before {
@@ -835,6 +856,10 @@ header {
   background-position: 0 0;
 }
 
+.adress-container {
+  position: relative;
+}
+
 .adress {
   color: var(--basic-black);
   font-size: 14px;
@@ -846,8 +871,8 @@ header {
   position: absolute;
   width: 303px;
   height: 306px;
-  right: 27px;
-  top: 62px;
+  right: 10px;
+  top: -370px;
 }
 
 .adress span {
@@ -871,11 +896,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
   margin-top: 18px;
   margin-bottom: 35px;
-  width: 100%;
-
 }
 
 .main-footer p {
@@ -911,26 +933,31 @@ header {
   fill: var(--basic-white);
 }
 
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-info-navigation  {
   margin: 0;
   margin-top: 18px;
-  width: 350px;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .footer-info-navigation li {
   margin-bottom: 11px;
   padding-left: 22px;
-
 }
 
-.footer-info-navigation li:first-child {
+.for-suppliers {
   font-weight: 700;
   position: relative;
 }
 
-.footer-info-navigation li:first-child::before {
+.for-suppliers::before {
   content: "";
   position: absolute;
   top: 0;
@@ -940,14 +967,11 @@ header {
   background-image: url("../img/heart.svg");
 }
 
-.footer-info-navigation li:nth-child(4) {
-  padding-left: 35px;
-}/*я понимаю, что это оч плохо, но как сделать нормально не ясно */
-
 .copyright {
   width: 190px;
   margin-right: 17px;
 }
+
 /*Button*/
 .slider-controls button {
   padding: 0;
@@ -967,7 +991,7 @@ header {
   background-color: var(--basic-white);
 }
 
-.index-columns .button {
+.index-columns-1 .button {
   position: absolute;
   right: 22px;
   bottom: 22px;
@@ -986,11 +1010,10 @@ header {
 }
 
 .subscription-form .button {
-  height: 44px;
+  flex-shrink: 0;
   font-size: 18px;
   line-height: 24px;
-  padding: 13px 20px;
-  margin-bottom: 24px;
+  padding: 9px 20px;
 }
 
 
@@ -1167,6 +1190,8 @@ header {
   border-bottom: 4px solid rgba(255,255,255,0.8);
   border-left: 4px solid rgba(255,255,255,0.8);
   transform: rotate(-45deg);
+  box-shadow: 0px 2px rgba(166, 185, 175),
+              inset 1px -2px 0px 0px rgba(166, 185, 175);
 }
 
 .filter-input-radio + label::before {
@@ -1190,6 +1215,13 @@ header {
   height: 8px;
   background-color: rgba(255,255,255,0.8);
   border-radius: 50%;
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:checked:hover + label::after,
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:checked:hover + label::after {
+  border-color: var(--basic-white);
 }
 
 .filter-item-button {
