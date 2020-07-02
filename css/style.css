@@ -222,6 +222,10 @@ header {
   border-radius: 50px;
 }
 
+.catalog-page-current-link {
+  color: var(--basic-white);
+  background-color: var(--basic-terracotta);
+}
 
 .catalog-navigation {
   display: none;
@@ -313,6 +317,8 @@ header {
 
 .login-link {
   color: var(--basic-black);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
 .login-form input[type='email'] {
@@ -460,17 +466,29 @@ header {
 
 .breadcrumbs a {
   position: relative;
-  padding-right: 22px;
+  margin-right: 22px;
 }
 
 .breadcrumbs a::after {
   content: "";
   position: absolute;
   top: 6px;
-  right: 8px;
+  right: -14px;
   width: 6px;
   height: 6px;
   background-image: url("../img/double-rangle.svg");
+}
+
+.breadcrumbs a,
+.breadcrumbs a,
+.catalog-item-title a,
+.catalog-item-title a,
+.footer-info-link,
+.footer-info-link,
+.academy-link,
+.academy-link {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs a:hover,
@@ -482,13 +500,17 @@ header {
 .academy-link:hover,
 .academy-link:active {
   color: var(--basic-peach);
+  text-decoration: none;
   border-bottom: 1px solid rgba(255,188,158,.2);
 }
 
 .login-link:hover,
-.login-link:active {
+.login-link:active,
+.news-link:hover,
+.news-link:active {
   color: var(--basic-red);
-  border: 1px solid rgba(232, 77, 55, 0.3);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .header-contacts {
@@ -747,13 +769,12 @@ header {
   margin-bottom: 4px;
 }
 
-.news a {
+.news-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-black);
   padding-top: 6px;
-
 }
 
 /*Subscription*/
@@ -923,6 +944,10 @@ header {
   height: 32px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 500px;
+}
+
+.footer-social-navigation li:hover {
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
 .social-link path {
@@ -1221,6 +1246,11 @@ header {
 .filter-input-checkbox:checked:hover + label::after {
   border-color: var(--basic-white);
 }
+
+input:focus + label {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 
 .filter-item-button {
   margin-top: 23px;
