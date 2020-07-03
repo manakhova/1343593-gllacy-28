@@ -336,7 +336,7 @@
                 <span>8 812 450-25-25</span><br>
                 (с 10 до 20 ежедневно)
               </p>
-              <button class="button" type="button">Форма обратной связи</button>
+              <button class="button feedback-button" type="button">Форма обратной связи</button>
             </section>
           </div>
         </div>
@@ -428,36 +428,35 @@
         </p>
       </div>
     </footer>
-    <div class=" visually-hidden modal gray-background">
-      <div class="modal-form">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2>Мы обязательно вам ответим!</h2>
-          <button class="close-button" type="button">
-            <span class="close-button-icon">
-              <svg xmlns="http://www.w3.org/2000/svg"
-              width="18" height="17" viewBox="0 0 18 17">
-              <path fill="#231F20" d="M17.454 1.46L16.04.046
-              9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04
-              1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
-            </span>
-          </button>
-          <p>
-            <label class="visually-hidden" for="name">Имя</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label class="visually-hidden" for="email">Почта</label>
-            <input id="email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="visually-hidden" for="some-answer">Ответ</label>
-            <textarea id="some-answer" type="text" name="answer" placeholder="В свободной форме"></textarea>
-          </p>
-          <div class="modal-button">
-            <button class="button" type="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
+    <div class="modal gray-background">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2>Мы обязательно вам ответим!</h2>
+        <button class="close-button" type="button">
+          <span class="close-button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg"
+            width="18" height="17" viewBox="0 0 18 17">
+            <path fill="#231F20" d="M17.454 1.46L16.04.046
+            9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04
+            1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
+          </span>
+        </button>
+        <p>
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="modal-name-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="email">Почта</label>
+          <input class="modal-email-input" id="email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="some-answer">Ответ</label>
+          <textarea class="modal-answer-input" id="some-answer" type="text" name="answer" placeholder="В свободной форме"></textarea>
+        </p>
+        <div class="modal-button">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
     </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
