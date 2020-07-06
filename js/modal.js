@@ -19,6 +19,7 @@ try {
 feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
+  feedbackForm.classList.add("form-show");
   if (storage) {
     feedbackName.value = storage;
     feedbackEmail.value = storage2;
@@ -31,15 +32,15 @@ feedback.addEventListener("click", function (evt) {
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.remove("modal-show");
-  feedbackPopup.classList.remove("modal-error");
+  feedbackForm.classList.remove("modal-error");
 });
 
 feedbackForm.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackEmail.value) {
     evt.preventDefault();
-    feedbackPopup.classList.remove("modal-error");
-    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-    feedbackPopup.classList.add("modal-error");
+    feedbackForm.classList.remove("modal-error");
+    feedbackForm.offsetWidth = feedbackPopup.offsetWidth;
+    feedbackForm.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", feedbackName.value);
