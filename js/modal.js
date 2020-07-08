@@ -39,7 +39,7 @@ feedbackForm.addEventListener("submit", function (evt) {
   if (!feedbackName.value || !feedbackEmail.value) {
     evt.preventDefault();
     feedbackForm.classList.remove("modal-error");
-    feedbackForm.offsetWidth = feedbackPopup.offsetWidth;
+    feedbackForm.offsetWidth = feedbackForm.offsetWidth;
     feedbackForm.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
@@ -54,7 +54,7 @@ window.addEventListener("keydown", function (evt) {
     if (feedbackPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       feedbackPopup.classList.remove("modal-show");
-      feedbackPopup.classList.remove("modal-error");
+      feedbackForm.classList.remove("modal-error");
     }
   }
 });
