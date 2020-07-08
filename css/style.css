@@ -548,8 +548,11 @@ header {
   line-height: 16px;
 }
 
-.header-contacts span {
+.header-contacts a {
   display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: var(--basic-white);
   margin-top: 10px;
   font-size: 22px;
   line-height: 24px;
@@ -1433,6 +1436,11 @@ input:focus + label {
 .disabled-paganation {
   opacity: 0.2;
 }
+
+.disabled-filter {
+  opacity: 0.4;
+}
+
 /*Modal*/
 
 .modal {
