@@ -874,8 +874,8 @@ header {
 .map {
   height: 100%;
   position: relative;
+  background-image: url("../img/map.png");
 }
-
 
 .map iframe {
   height: 100%;
@@ -884,7 +884,8 @@ header {
 }
 
 .adress-container {
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .adress {
@@ -899,7 +900,7 @@ header {
   width: 303px;
   min-height: 306px;
   right: 27px;
-  top: -376px;
+  top: 62px;
 }
 
 .adress p {
